@@ -1,0 +1,103 @@
+.login {
+  width: 1200px;
+  margin: 0 auto;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100vh;
+    margin: 0 auto;
+    &-title {
+      font-size: 32px;
+      color:rgb(25, 110, 221);
+      font-weight: 700;
+      text-align: center;
+      line-height: 40px;
+    }
+    .login__type-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 55px;
+      .type-btn {
+        width: 100px;
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid #ffa111;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        filter: grayscale(1)
+      }
+      .active {
+        filter: grayscale(0)
+      }
+
+    }
+    .login__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 360px;
+      margin: 0 auto;
+      border: 2px solid #ffa111;
+      padding: 10px;
+      position: relative;
+      & input {
+        width: 270px;
+        height: 30px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        background-color: #ffa111;
+        color: #000222;
+        padding: 0 5px;
+      }
+      & select {
+        width: 280px;
+        height: 30px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        background-color: #ffa111;
+        color: #000222;
+        padding: 0 5px;
+      }
+      & input::placeholder {
+        color: #000222;
+      }
+      
+      & input[type="file"]::file-selector-button {
+        background-color: #ffa111;
+        padding: 8px 5px;
+        border: none;
+      }
+      
+      .login__form-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(5, 33, 83);
+
+        width: 140px;
+        height: 30px;
+        border: 2px solid #ffaa11;
+        position: absolute;
+        top: -18px;
+      }
+      .form-btn {
+        width: 120px;
+        height: 30px;
+        background-color: #ffa111;
+        border: none;
+        color: #000222;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}

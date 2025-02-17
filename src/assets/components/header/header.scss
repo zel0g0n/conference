@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin: 0 auto;
+  padding: 5px 0;
+  nav {
+    width: max-content;
+    position: relative;
+    .navbar-current {
+      font-size: 32px;
+      color:rgb(25, 110, 221);
+
+      cursor: pointer;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: start ;
+      justify-content: start;
+      position: absolute;
+      left: -40px;
+      top: 60px;
+      border-radius: 10px;
+      .navbar__item {
+        cursor: pointer;
+        text-decoration: none;
+        color:rgb(25, 110, 221);
+        font-size: 18px;
+        height: 40px;
+      }
+
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  .logo-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 90px;
+    border: 2px solid #ffa111;
+    box-sizing: border-box;
+  }
+  .logo-u {
+    height: 90px;
+  }
+}
