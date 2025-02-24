@@ -4,7 +4,6 @@ const Author = () => {
   return (
     <div className='author'>
       <div className="author__heading">
-        <div className="logo-c">Konferensiya logotipi</div>
         <h3 className="author__heading-title">Mualliflar uchun</h3>
       </div>
       <div className="author__container">
