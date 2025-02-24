@@ -9,6 +9,16 @@ const navData = [
     title: 'Xalqaro konferensiyalar',
     link: '/international'
   },
+  {
+    id: 3,
+    title: "Muallifga yo'riqnoma",
+    link: '/toauthor'
+  },
+  {
+    id: 2,
+    title: "Ro'yxatdan o'tish",
+    link: '/login'
+  },
 
 ]
 

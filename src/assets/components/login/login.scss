@@ -24,10 +24,10 @@
         width: 100px;
         height: 40px;
         background-color: transparent;
-        border: 2px solid #ffa111;
+        border: 3px solid rgb(25, 110, 221);
         font-size: 16px;
         font-weight: 500;
-        color: #fff;
+        color: rgb(25, 110, 221);
         cursor: pointer;
         filter: grayscale(1)
       }
@@ -41,10 +41,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 300px;
-      height: 360px;
+      width: 400px;
+      height: 460px;
+      gap: 15px;
       margin: 0 auto;
-      border: 2px solid #ffa111;
+      border: 3px solid rgb(25, 110, 221);
+      border-radius: 10px;
       padding: 10px;
       position: relative;
       & input {
@@ -53,7 +55,8 @@
         margin-bottom: 10px;
         border: none;
         outline: none;
-        background-color: #ffa111;
+        background-color: inherit;
+        border-bottom: 3px solid rgb(25, 110, 221);
         color: #000222;
         padding: 0 5px;
       }
@@ -63,7 +66,9 @@
         margin-bottom: 10px;
         border: none;
         outline: none;
-        background-color: #ffa111;
+        background-color: inherit;
+        border-bottom: 3px solid rgb(25, 110, 221);
+
         color: #000222;
         padding: 0 5px;
       }
@@ -72,7 +77,7 @@
       }
       
       & input[type="file"]::file-selector-button {
-        background-color: #ffa111;
+        background-color: inherit;
         padding: 8px 5px;
         border: none;
       }
@@ -81,19 +86,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:rgb(5, 33, 83);
+        background-color: rgba(25, 110, 221);
 
-        width: 140px;
-        height: 30px;
-        border: 2px solid #ffaa11;
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        border: 3px solid rgb(25, 110, 221);
         position: absolute;
-        top: -18px;
+        top: -23px;
       }
       .form-btn {
         width: 120px;
-        height: 30px;
-        background-color: #ffa111;
+        height: 40px;
+        background-color: inherit;
         border: none;
+        border-bottom: 3px solid rgb(25, 110, 221);
         color: #000222;
         font-size: 16px;
         cursor: pointer;

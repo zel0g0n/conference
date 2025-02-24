@@ -61,7 +61,7 @@ const Login = () => {
             <option value="conference">Tadbir 3</option>
             <option value="conference">Tadbir 4</option>
           </select>
-          <input required type="file" placeholder='Ilmiy maqolangizni yuklang' />
+          {/* <input required type="file" placeholder='Ilmiy maqolangizni yuklang' /> */}
           <button type='submit' className="form-btn">Yuboring</button>
         </form>
       </div>

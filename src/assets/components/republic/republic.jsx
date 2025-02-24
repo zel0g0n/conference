@@ -1,12 +1,9 @@
-import React from 'react'
-import Header from '../header/header'
 import ConferenceList from '../conference-list/conference-list'
-import { republicConferenceData, navData } from '../../constants/constants'
+import { republicConferenceData} from '../../constants/constants'
 
 const Republic = () => {
   return (
     <div>
-      <Header data={navData[0]}></Header>
       <ConferenceList data={republicConferenceData}></ConferenceList>
     </div>
   )

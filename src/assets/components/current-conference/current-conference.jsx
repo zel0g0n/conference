@@ -17,16 +17,14 @@ const CurrentConference = ({rData, iData}) => {
   return (
     <div className='current__conference'>
       <div className="cc__heading">
-        <div className="logo-c">Konferensiya logotipi</div>
         <h3 className="cc__heading-title">{data[0].title}</h3>
 
       </div>
       <div className="cc__container">
         <aside className="cc__container-aside">
-          <div className="logo-u">Universitet logotipi</div>
           <ConferenceTime time={data[0].time}></ConferenceTime>
         </aside>
-        <div className="cc__container-main no-scrollbar">
+        <div className="cc__container-main">
           <div className="actual main__item">
             {rData[0].cData.actual}
           </div>
@@ -39,9 +37,6 @@ const CurrentConference = ({rData, iData}) => {
         </div>
         <aside className="cc__container-aside">
           <div className="partners">Hamkor tashkilotlar nomi va logotiplari</div>
-          <Link to='/login' className="btn login">
-            Ro'yxatdan o'tish
-          </Link>
         </aside>
       </div>
     </div>

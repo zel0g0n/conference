@@ -38,15 +38,15 @@
   }
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-html {
-  scrollbar-width: none;
-}
+// ::-webkit-scrollbar {
+//   display: none;
+// }
+// html {
+//   scrollbar-width: none;
+// }
 
-.no-scrollbar {
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+// .no-scrollbar {
+//   overflow: auto;
+//   -ms-overflow-style: none;
+//   scrollbar-width: none;
+// }
