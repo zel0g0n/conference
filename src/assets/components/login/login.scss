@@ -109,3 +109,26 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+  .login {
+    width: 90%;
+    &__container {
+      width: 100%;
+      .login__form {
+        width: 300px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .login {
+    width: 90%;
+    &__container {
+      width: 100%;
+      .login__form {
+        width: 300px;
+      }
+    }
+  }
+}

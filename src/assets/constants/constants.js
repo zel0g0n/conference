@@ -15,7 +15,7 @@ const navData = [
     link: '/toauthor'
   },
   {
-    id: 2,
+    id: 4,
     title: "Ro'yxatdan o'tish",
     link: '/login'
   },

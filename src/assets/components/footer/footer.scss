@@ -23,6 +23,7 @@
           color:rgb(25, 110, 221);
           text-decoration: none;
           font-size: 18px;
+          margin-left: 10px;
         }
       }
     }
@@ -43,6 +44,39 @@
         font-size: 18px;
         color:rgb(25, 110, 221);
         text-decoration: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+  .footer {
+    height: max-content;
+    padding: 0;
+    &__item {
+      width: 90%;
+      flex-direction: column-reverse;
+      align-items: start;
+      height: max-content;
+      padding: 20px 0;
+      .map {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .footer {
+    height: max-content;
+    padding: 0;
+    &__item {
+      width: 90%;
+      flex-direction: column-reverse;
+      align-items: start;
+      height: max-content;
+      padding: 20px 0;
+      .map {
+        width: 100%;
       }
     }
   }

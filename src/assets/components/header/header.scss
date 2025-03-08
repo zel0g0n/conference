@@ -1,9 +1,10 @@
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 999;
   background-color: #fff;
   &__item {
-
-
     display: flex;
     max-width: 1200px;
     justify-content: space-between;
@@ -14,12 +15,7 @@
     nav {
       width: max-content;
       position: relative;
-      .navbar-current {
-        font-size: 32px;
-        color:rgb(25, 110, 221);
-
-        cursor: pointer;
-      }
+      
       .navbar {
         display: flex;
         align-items: center ;
@@ -37,11 +33,95 @@
         display: none;
       }
     }
-
+    .menu__open {
+      display: none;
+      height: 30px;
+    }
     .logo-u {
       height: 100px;
       width: 100px;
     }    
   }
 
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+  .header {
+    &__item {
+      
+      height: 80px;
+      nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 200px);
+        left: 0;
+        padding-top: 100px;
+        transition: .3s;
+        background-color: #fff;
+        top: 90px;
+        z-index: 9;
+        .navbar {
+          flex-direction: column;
+        }
+      }
+      
+      
+      .hide__modal-menu {
+        left: -100%;
+      };
+      
+      .menu__open {
+        display: block;
+      }
+      .menu__close {
+        display: none;
+      }
+
+      .logo-u {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .header {
+    &__item {
+      
+      height: 80px;
+      nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 200px);
+        left: 0;
+        padding-top: 100px;
+        transition: .3s;
+        background-color: #fff;
+        top: 90px;
+        z-index: 9;
+        .navbar {
+          flex-direction: column;
+        }
+      }
+      
+      
+      .hide__modal-menu {
+        left: -100%;
+      };
+      
+      .menu__open {
+        display: block;
+      }
+      .menu__close {
+        display: none;
+      }
+
+      .logo-u {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
 }

@@ -3,10 +3,10 @@ import './footer.scss'
 
 const Footer = () => {
   const footerData = [
-    {id: 1, title: 'Instagram', url: 'https://www.instagram.com/renessans.edu.uz/'},
-    {id: 2, title: 'Telegram', url: 'https://t.me/renessansedu_uz'},
-    {id: 3, title: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61557702814655'},
-    {id: 4, title: 'YouTube', url: 'https://youtube.com/@renessansuniversity'},
+    {id: 1, title: 'Instagram', url: 'https://www.instagram.com/renessans.edu.uz/', icon: `fa-brands fa-instagram`},
+    {id: 2, title: 'Telegram', url: 'https://t.me/renessansedu_uz', icon: `fa-solid fa-paper-plane`},
+    {id: 3, title: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61557702814655', icon: `fa-brands fa-facebook`},
+    {id: 4, title: 'YouTube', url: 'https://youtube.com/@renessansuniversity', icon: `fa-brands fa-youtube`},
   ]
   return (
     <div className='footer'>
@@ -15,6 +15,7 @@ const Footer = () => {
           <p className="about">Bizning ijtimoiy tarmoqlar</p>
           {footerData.map(item => (
             <li key={item.id}>
+              <i className={item.icon}></i>
               <a href={item.url} className="footer__item-links--link">
                 {item.title}
               </a>
